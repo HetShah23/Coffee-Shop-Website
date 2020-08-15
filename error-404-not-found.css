@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    font-size: 25vw;
+    color: black;
+    background: white;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-family: Normsimport;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.10em;
+    mix-blend-mode: screen;
+    z-index: 0;
+    cursor: default;
+}
+
+.text-black{
+  position: absolute;
+  top: 0;
+  font-size: 25vw;
+  color: white;
+  background: black;
+  width: 100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-family: Normsimport;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.10em;
+  mix-blend-mode: multiply;
+  z-index: 0;
+  cursor: default;
+}
+
+.video-bg{
+    height:80%;
+    overflow: hidden;
+}
+
+.test{
+    height:5vw;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+@font-face{
+  font-family: NormsBimport;
+  src:url("fonts/TT-Norms-Fonts/TTNorms-Bold.otf");
+}
+
+@font-face{
+  font-family: Normsimport;
+  src:url("Fonts/TT-Norms-Fonts/TTNorms-Regular.otf");
+}
+
+.logo{
+  float:left;
+  padding:2% 1% 0% 2%;
+  animation-name: slideleft;
+  -webkit-animation-name: slideleft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.text p{
+    margin-top: 15vh;
+}
+
+.logo-name{
+    float:left;
+    padding:2% 0%;
+    margin-top: 1px;
+    font-family: NormsBimport;
+    letter-spacing: 0.02em;
+    font-size: 23px;
+    color: black;
+    animation-name: slideout;
+  -webkit-animation-name: slideout;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+}
+
+.go-back{
+    float: right;
+    padding: 2% 1.5%;
+}
+
+.go-back-text{
+  float: right;
+  padding: 2% 0%;
+  margin-top: -2px;
+  margin-bottom: 5px;
+  color: black;
+  visibility: hidden;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slideout {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideout {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.cancel-text{
+  font-family: Normsimport;
+  font-size: 20px;
+  visibility: visible;
+}
+
+.cancel{
+  transition: transform 1.5s;
+}
+
+.cancel:hover{
+  transform: rotate(-360deg);
+}
+
+.go-back:hover .go-back-text {
+  visibility: visible;
+  animation-name: slidein;
+  -webkit-animation-name: slidein;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.message{
+  height:5vw;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 75%;
+}
+
+.message p{
+  color: black;
+  font-family: Normsimport;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 2.5%;
+  cursor: default;
+}
+
+.message-black{
+  color: white;
+  font-family: Normsimport;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 2.5%;
+  cursor: default;
+}
+
+.p-black{
+  color: white;
+  font-family: Normsimport;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 2.5%;
+  cursor: default;
+}
+
+
+
+.button{
+  background-color: black;
+  color: white;
+  width: 12%;
+  height: 4%;
+  padding: 1%;
+  border-radius: 5rem;
+}
+
+.button-black{
+  background-color: white;
+  color: black;
+  width: 12%;
+  height: 4%;
+  padding: 1%;
+  border-radius: 5rem;
+}
+
+.button-a{
+  color: white;
+  font-size: 14px;
+  font-family: Normsimport;
+}
+
+.a-black{
+  color: black;
+  font-size: 14px;
+  font-family: Normsimport;
+}
+
+a{
+  text-decoration: none;
+}
+
+.mode{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 85%;
+  left: 80%;
+}
+
+.mode-button{
+  border-radius: 50%;
+  width: 4%;
+  height: 1%;
+  box-shadow: none;
+  outline: none;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  animation-direction: ;
+  animation-iteration-count: ;
+}
