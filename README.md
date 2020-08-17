@@ -7,4 +7,4 @@ Being my first project it is not responsive or dynamic.<br>
 Check out website for quick view. [Crafted Coffee's](https://hetshah23.github.io/Coffee-Shop-Website/)
 <br><br>
 ### Snapshot
-![Home Page Snapshot](/snapshot/2020-08-17 (2).png)
+![Home Page Snapshot](shapshot/2020-08-17%20(2).png)
