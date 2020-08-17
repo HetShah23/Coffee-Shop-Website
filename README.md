@@ -5,3 +5,6 @@ It is about a Coffee Shop's site and called as **Crafted Coffee's**.
 Being my first project it is not responsive or dynamic.<br>
 <br>
 Check out website for quick view. [Crafted Coffee's](https://hetshah23.github.io/Coffee-Shop-Website/)
+<br><br>
+### Snapshot
+![Home Page Snapshot](/snapshot/2020-08-17 (2).png)
